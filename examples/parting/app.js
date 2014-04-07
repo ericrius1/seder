@@ -18,12 +18,6 @@ define(function(require, exports, module) {
   var helperFunctions     = require( 'Utils/helperFunctions'      );
   var m                   = require( 'Utils/Math'                 );
 
-  
-  /*
-   
-     Create our womb
-
-  */
 
   
   womb = new Womb({
