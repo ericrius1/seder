@@ -81,7 +81,7 @@ define(function(require, exports, module) {
     }
     setTimeout(changeGod, 35000)
     setTimeout(changeGod, 45000)
-    setTimeout(miracleGod, 71000)
+    setTimeout(miracleGod, 72000)
     setTimeout(changeGod, 81000)
     setTimeout(changeGod, 120000)
     setTimeout(endGod, 163000)
