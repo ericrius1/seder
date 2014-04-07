@@ -52,7 +52,7 @@ define(function(require, exports, module) {
 
   
       defaults:{
-        textureFile: '/lib/img/textures/ash_uvgrid01.jpg' ,
+        textureFile: 'lib/img/textures/ash_uvgrid01.jpg' ,
         geometry: new THREE.IcosahedronGeometry( 10 , 4 ),
         material: new THREE.MeshNormalMaterial()
       }
