@@ -1,63 +1,32 @@
 <!DOCTYPE html>
-<html style="cursor:auto">
+<html>
     <head>
-      <title>Wombs</title>
-      <link rel="stylesheet" type="text/css" href="css/main.css" >
-      
-      <style>
+      <title>924 Clayton St. Seder</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" >
+        <script data-main="app.js" src="js/lib/require.js"></script>
+        <script>
 
-        a{
-          font-size:20px;
-          color:#000;
-        }
+          require.config({
 
-        h2{
-          color:#000;
-        }
+            baseUrl: "examples/parting/",
+            paths: {
+              
+              "Womb"            : "js/Wombs/Womb",
+              "Utils"           : "js/Wombs/Utils",
+              "Being"           : "js/Wombs/Being",
 
+              "Species"         : "js/Wombs/Species",
 
-        .
-      </style>
+              "Shaders"         : "js/Wombs/Utils/Shaders",
+              "Components"      : "js/Wombs/Components",
+
+              "lib"             : "js/lib",
+
+            }
+          });
+
+        </script>
     </head>
-    <body background="#000" style:"color:black;">
-
-      <div class="scroll fullHeight absolute" >
-        <ul>
-
-          <li><a href="https://github.com/cabbibo/wombs/"> <h1>WOMBS</h1></a></li>
-          <li><h2> PROJECTS </h2></li>
-
-          <li><a href="quoi/"> Quoi - Avalon Emerson</a></li>
-
-        </ul>
-
-        <ul>
-          
-          <li><h2> AUDIO SKETCHES</h2></li>
-
-
-
-        </ul>
-
-        <ul>
-
-          <li><h2> EXAMPLES </h2></li>
-
-          <li><a href="examples/parting"> parting </a></li>
-
-
-        </ul>
-
-        <ul>
-
-          <li><h2> MOBILE </h2></li>
-
-
-        </ul>
-     
-      </div>
-
-
-
+    <body background="#000" >
     </body>
 </html>
