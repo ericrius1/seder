@@ -37,7 +37,7 @@ define(function(require, exports, module) {
   womb.cameraController.controls.userPan = false;
   womb.cameraController.controls.userZoom = false;
 
-  womb.audio = womb.audioController.createStream( '/lib/audio/tracks/god.mp3' );
+  womb.audio = womb.audioController.createStream( 'lib/audio/tracks/god.mp3' );
 
   
   var cubeGeo = new THREE.IcosahedronGeometry(45, 2);
