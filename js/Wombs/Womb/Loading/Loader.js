@@ -38,7 +38,7 @@ define(function(require, exports, module) {
     this.curtain.appendChild( this.loadBar );
 
     this.loadingGif     = document.createElement( 'img' );
-    this.loadingGif.src = this.params.loadGif;
+    // this.loadingGif.src = this.params.loadGif;
     this.loadingGif.id  = 'loadingGif';
 
 

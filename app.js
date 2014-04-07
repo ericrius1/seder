@@ -30,9 +30,9 @@ define(function(require, exports, module) {
     failureVideo:     84019684,
     size:             400
   });
-  womb.camera.position.z =  500;
+  womb.camera.position.z =  360;
   womb.cameraController.controls.autoRotate = true;
-  womb.cameraController.controls.autoRotateSpeed = 1;
+  womb.cameraController.controls.autoRotateSpeed = 0.4;
   womb.cameraController.controls.userRotate = false;
   womb.cameraController.controls.userPan = false;
   womb.cameraController.controls.userZoom = false;
@@ -77,14 +77,14 @@ define(function(require, exports, module) {
     }
 
     var endGod = function(){
+      womb.fireUniforms.disperse.value = 1;
     }
     setTimeout(changeGod, 35000)
     setTimeout(changeGod, 45000)
-    setTimeout(miracleGod, 70000)
+    setTimeout(miracleGod, 71000)
     setTimeout(changeGod, 81000)
     setTimeout(changeGod, 120000)
-    setTimeout(fadeAudio, 180000)
-    setTimeout(endGod, 3000)
+    setTimeout(endGod, 163000)
 
   
     womb.audio.play();

@@ -121,6 +121,7 @@ define(function(require, exports, module) {
         yFactor: {type: "f", value: 0.085},
         zFactor: {type: "f", value: 0.087},
         fireSpeed: {type: 'f', value: 0.6},
+        disperse: {type: 'i', value: 0},
         time:     womb.time
       },      
       vertexShader:   FBOShaders.vertex.basic,

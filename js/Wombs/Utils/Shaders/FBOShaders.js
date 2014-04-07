@@ -80,6 +80,7 @@ define(function(require, exports, module) {
         "uniform float yFactor;",
         "uniform float zFactor;",
         "uniform float fireSpeed;",
+        "uniform int disperse;",
         
         "uniform float time;",
 
@@ -93,14 +94,14 @@ define(function(require, exports, module) {
           "vec4 pos = texture2D( tPositions, vUv );",
 
           "float t = time/1000000.0;",
-          "if ( rand( vUv + t) > 0.99 || pos.w <= 0.0 ) {",
+          "if ( disperse == 0 && (rand( vUv + t) > 0.99 || pos.w <= 0.0) ) {",
 
             "pos.xyz = texture2D( tOrigins, vUv ).xyz;",
             "pos.w = opacity;",
 
           "} else {",
 
-            // "if ( pos.w <= 0.0 ) discard;",
+            "if ( pos.w <= 0.0 ) discard;",
 
             "float x = pos.x + t * 5.0;",
             "float y = pos.y;",
